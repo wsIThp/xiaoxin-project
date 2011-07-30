@@ -10,10 +10,12 @@ int main(int argc, const char *argv[])
         printf("%c",*ptr);
         ptr++;
     }
-    while(ptr >= a)
+    printf("\n");
+    while(ptr >=a)
     {
         printf("%c",*ptr);
         ptr--;
+        
     }
     printf("\n");
 

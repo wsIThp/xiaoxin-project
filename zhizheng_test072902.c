@@ -6,7 +6,6 @@ int main(int argc, const char *argv[])
     char *ptr;
   
     ptr=str;
-
     /*for (i = 0; i < N; i++,ptr++)
     {
         *ptr='a'+i;
