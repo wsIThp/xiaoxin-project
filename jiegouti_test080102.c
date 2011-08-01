@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 struct date
 {
     int a;
@@ -19,9 +19,9 @@ int main(int argc, const char *argv[])
     printf("%d\n",m.c);
     printf("%d\n",m.d);
     return 0;
-}
+}*/
 
-/*#include <stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 struct student
@@ -37,15 +37,21 @@ int main (void)
 {
     STU m;
     STU n;          //////
-    STU *ptr=NULL;
+    STU *ptr=NULL;//指向结构体student的指针
 
     ptr=&m;
+
+    ptr->p=&n;///////////
+
+    ptr->p->number=5;////////////////////
+    strcpy(ptr->p->name,"wang");//////////////
+
     ptr->number=20;
     strcpy(ptr->name,"zhang" );
 
-    printf("");
-    printf("%-5d  %s\n",ptr->number,ptr->name);
+    printf(" n %-5d  %s\n",ptr->p->number,ptr->p->name);///////////////////
+    printf("m  %-5d  %s\n",ptr->number,ptr->name);
     return 0;
-}*/
+}
 
 
