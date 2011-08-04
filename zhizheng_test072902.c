@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>/////指针练习
 #define N  20
 int main(int argc, const char *argv[])
 {
