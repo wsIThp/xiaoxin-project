@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define N  20
 int main(int argc, const char *argv[])
 {
