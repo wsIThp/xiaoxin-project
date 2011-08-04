@@ -43,6 +43,7 @@ int main (void)
 
     ptr->p=&n;///////////
 
+
     ptr->p->number=5;////////////////////
     strcpy(ptr->p->name,"wang");//////////////
 

@@ -8,9 +8,8 @@ void init_date(int *a , int n)
     int i=0;
     for (i = 0; i < n; i++)
     {
-        a[i]=rand()%(n*2);
-    
-    printf("%5d",a[i]);
+        a[i]=rand()%(n*2);  //定义系统给的数值取余2n，n是20即值小于40，n是10值小于20.
+        printf("%5d",a[i]);
     }
     printf("\n");
 }
@@ -23,8 +22,7 @@ void delete_date(int *a,int n)
     {
         if(a[i]!=-1)
         {
-            
-            //for (j = n; j > n-i-1; j--)
+             //for (j = n; j > n-i-1; j--)
             for (j = i+1; j < n; j++)
             {
                 if(a[i]==a[j])
@@ -39,12 +37,12 @@ void delete_date(int *a,int n)
 }
 void printf_date(int *a,int n)
 {
-    int j;
-    
-    for(j=0;j<n;j++)
-   { if(a[j]!=-1)
-    printf("%5d",a[j]);
-   }
+     int j;
+     for(j=0;j<n;j++)
+         { 
+            if(a[j]!=-1)     //if后面不能跟分号
+            printf("%5d",a[j]);
+         }
     printf("\n");
 }
 int main(int argc, const char *argv[])
