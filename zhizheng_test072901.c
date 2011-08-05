@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define N  20
 int main(int argc, const char *argv[])
 {
@@ -10,11 +9,11 @@ int main(int argc, const char *argv[])
     ptr=str;
 
     for (i = 0; i < N; i++,ptr++)
-    {
+   { 
         *ptr='a'+i;
     }
     *ptr='\0';//
-    printf("str=%s\n",str);//
+    printf("str=%d\n",str[2]);//
 
     /*for (i = 0; i < N; i++)
     {

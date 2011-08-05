@@ -2,7 +2,7 @@
 int main(int argc, const char *argv[])
 {
 
-    unsigned int a=0x556677;
+    unsigned int a=0x445677;
     unsigned int mask = (1<<31);    
     int  i = 0 ;
 
