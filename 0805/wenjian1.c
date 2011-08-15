@@ -16,7 +16,7 @@ int main(int argc, const char *argv[])
     int i=0;
     while(str[i]!='\0')
     {
-        putc(str[i],fp);
+        putc(str[i],fp);//////将str[i]中的内容写到fp所打开的文件中
         i++;
     }
     //rewind(fp);
