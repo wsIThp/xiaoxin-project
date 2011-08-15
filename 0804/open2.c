@@ -1,6 +1,6 @@
 /*open 函数参数的区别  fputs函数的使用*/
 /*输出printf不会自动换行   puts会自动换行*/
-
+/*函数gets：一种流*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -19,9 +19,9 @@ int main(int argc, const char *argv[])
         exit(0);
     }
     
-    fputs(str,fp);
-///    puts(str);  ////输出会自动换行
-    gets(r_str);  /////一种输入 流 不会换行
+   //// fputs(str,fp);///////打印到fp所指的文件中
+    puts(str);  ////输出会自动换行 会直接打印到屏幕
+    gets(r_str);  /////一种输入 流 不会换行 得自己从屏幕上输入这个函数会自己记录到所指的字符窜中，这个函数会记录空格。
     printf("%s",r_str);
     fclose(fp);
     return 0;
