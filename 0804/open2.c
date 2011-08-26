@@ -11,8 +11,8 @@ int main(int argc, const char *argv[])
     char r_str[1024]={0};    
     //fp=fopen("open.txt","a+");////a+的意义是在txt文本后边上次结束的地方直接写入字符窜的内容。。
     fp=fopen("open.txt","w+");///参数可变动
-    //fp=fopen("open1.txt","w+");// 在不存在open1.c的情况下“w+”会自动创建文件进行写入
-    //fp=fopen("open1.txt","r+");// 在不存在open1.c的情况下“r+”不会创建文件会报错 
+    //fp=fopen("open1.txt","w+");// 在不存在open1.txt的情况下“w+”会自动创建文件进行写入
+    //fp=fopen("open1.txt","r+");// 在不存在open1.txt的情况下“r+”不会创建文件会报错 
     if (fp==NULL)
     {
         perror("open");
