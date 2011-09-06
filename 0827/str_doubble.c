@@ -57,15 +57,23 @@ int riffle(int(*p)[13])
 	}
 	q=(int *)p;
 	for (i = 0; i < 52;q++, i++) {
-		printf("%d\n",*q);
+		if(i%10==0)
+		{
+			printf("\n");
+		}      		
+		printf("%5d",*q);
+	}
 }
 
-}
 void printf_fun(int (*p)[13])
 {	
 	int *q=(int *)p;
 	int i=0;
 	for (i = 0; i < 52;q++, i++) {
+		if(i%10==0)
+		{
+			printf("\n");
+		}
 		printf("%d\n",*q);
 	}
 }
@@ -81,6 +89,8 @@ int main(int argc, const char *argv[])
 	int a[4][13];
 	
 	riffle(a);
+	
+	printf("\n");
 	//printf_fun(a);
 	//perflop(a,4);
 
