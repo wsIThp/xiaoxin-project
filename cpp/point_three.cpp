@@ -1,6 +1,8 @@
 #include <iostream>	
 #include <cstring>
+
 using namespace std;
+
 class point						//// 类中的变量默认的使用范围是两个大括号之间。
 {
 public:							/////被puiblic修饰的变量可以在任何地方使用。

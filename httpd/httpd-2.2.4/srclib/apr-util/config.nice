@@ -1,0 +1,15 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/home/akaedu/project/xinge-project/httpd/httpd-2.2.4/srclib/apr-util/configure" \
+"-prefix=/var/httpd" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/akaedu/project/xinge-project/httpd/httpd-2.2.4/srclib/apr-util" \
+"--with-apr=../apr" \
+"--prefix=/var/httpd" \
+"--exec-prefix=/var/httpd" \
+"--libdir=/var/httpd/lib" \
+"--includedir=/var/httpd/include" \
+"--bindir=/var/httpd/bin" \
+"$@"

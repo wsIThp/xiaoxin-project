@@ -29,8 +29,8 @@ Ccomplex Ccomplex::operator +(Ccomplex &c)
 Ccomplex Ccomplex::operator +(double r)
 {
 	Ccomplex tmp;
-	tmp.real=real;
-	tmp.img=img+r;
+	tmp.real=real+r;
+	tmp.img=img;
 	return tmp;
 }
 Ccomplex operator +(double r,Ccomplex &c)
@@ -43,11 +43,11 @@ Ccomplex operator +(double r,Ccomplex &c)
 int main(void)
 {
 	Ccomplex c1(11,22),c2(10,0.3),c;
-	c=c1+c2;
+	c=c1+c2;///////相当于c2.operator+(c3)
 	c.show();
-	c=c1+19;
+	c=c1+19;///////相当于此c2.operator+(15.1)
 	c.show();
-	c=19+c2;
+	c=19+c2;/////19不是类的对象所以不能定义类的成员函数来实现，只能定义外部函数实现，为了能够访问到类的稀有成员，只能定义友元函数。
 	c.show();
 	return 0;
 }
