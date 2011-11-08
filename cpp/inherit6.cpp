@@ -53,6 +53,7 @@ private:
 int main(void)
 {
 	Animal dg(1,(char *)"guo",'q');
+	dg.show();
 	Animal an(dg);				//////dg=an;
 	return 0;
 }

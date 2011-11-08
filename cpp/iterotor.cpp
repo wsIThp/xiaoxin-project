@@ -40,10 +40,10 @@ public:
 	int operator *(){return pt->data;}
 	Iterator &operator++(int)
 	{	pt=pt->next;return *this;}
-//	Iterator &operator++(int)
-//	{
-//	   Iterator *tmp=this;pt=pt->next;return *tmp;
-//	}
+	Iterator &operator++(int)
+	{
+	   Iterator *tmp=this;pt=pt->next;return *tmp;
+	}
 	Node *get_pt()
 	{
 	    return pt;
